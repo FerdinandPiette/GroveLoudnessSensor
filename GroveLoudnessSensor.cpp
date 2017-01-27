@@ -19,6 +19,6 @@ float GroveLoudnessSensor::getNoiseAmount() {
 	return position;
 }
 
-void GroveLoudnessSensor::setMaxMesurement(float maxMesurement) {	
+void GroveLoudnessSensor::setMaxMesurement(unsigned int maxMesurement) {	
 	this->_maxMesurement = maxMesurement;
 }
