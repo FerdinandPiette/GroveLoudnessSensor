@@ -13,9 +13,9 @@ class GroveLoudnessSensor {
 		unsigned int _performMesurement(); 
 
 	public:
-		GroveLoudnessSensor(GrovePin pins, unsigned int maxMesurement = 1023);
+		GroveLoudnessSensor();
 		virtual ~GroveLoudnessSensor() {};
-		void initialize();
+		void initialize(GrovePin pins, unsigned int maxMesurement = 1023);
 		float getNoiseAmount();
 		void setMaxMesurement(unsigned int maxMesurement);
 };
