@@ -14,7 +14,6 @@ unsigned int GroveLoudnessSensor::_performMesurement() {
 float GroveLoudnessSensor::getNoiseAmount() {
 	unsigned int value = this->_performMesurement();
 	float position = (float)value / this->_maxMesurement;
-	Serial.print(value);Serial.print('-');
 	if(position > 1) { position = 1; } else if(position < 0) { position = 0; }
 	return position;
 }
